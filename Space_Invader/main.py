@@ -15,17 +15,17 @@ screen = pygame.display.set_mode((800, 600))
 
 
 # Background
-background = pygame.image.load('J:/Programming/Python/PyGame/Space_Invader/images/background.jpg')
+background = pygame.image.load('images/background.jpg')
 
 
 # Title and Logo
 pygame.display.set_caption("Space Invaders")
-icon = pygame.image.load('J:/Programming/Python/PyGame/Space_Invader/images/logo.png')
+icon = pygame.image.load('images\logo.png')
 pygame.display.set_icon(icon)
 
 
 # Player
-playerImg = pygame.image.load('J:/Programming/Python/PyGame/Space_Invader/images/spaceship.png')
+playerImg = pygame.image.load('images/spaceship.png')
 playerX = 370
 playerY = 480
 playerX_change = 0
@@ -40,7 +40,7 @@ enemyY_change = []
 no_of_enemies = 6
 
 for i in range(no_of_enemies):
-    enemyImg.append(pygame.image.load('J:/Programming/Python/PyGame/Space_Invader/images/ghost.png'))
+    enemyImg.append(pygame.image.load('images/ghost.png'))
     enemyX.append(random.randint(0, 735))
     enemyY.append(random.randint(50,150))
     enemyX_change.append(0.4)
@@ -49,7 +49,7 @@ for i in range(no_of_enemies):
 # Bullet
 # Ready -> Can not see the bullet at start
 # Fire -> The bullet is currently moving
-bulletImg = pygame.image.load('J:/Programming/Python/PyGame/Space_Invader/images/bullet.png')
+bulletImg = pygame.image.load('images/bullet.png')
 bulletX = 0
 bulletY = 480
 bulletX_change = 0
